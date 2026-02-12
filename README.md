@@ -1,13 +1,25 @@
 # visited-places
 Places I've been to
-//TEST ONE:Can create new places with all properties
-describe('Place', function() {
-it('creates place object with correct properties', function() {let mlolongo = new Place('Mlolongo', ['African Heritage House'], '2024', 'Breathtaking!');
 
-expect(Mlolongo.location).toEqual('Mlolongo');
-expect(Mlolongo.landmarks).toEqual(['African Heritage House']);
-expect(Mlolongo.year).toEqual('2024');
-expect(Mlolongo.notes).toEqual('Breathtaking!');
-});
-});
+Project layout
+|_index.html - Open with browser
+|_places.js - business logic
+|_test-places.js - tests
+|_README.md - test progress and results
 
+Pseudocode tests
+TEST ONE: Can create a new Place with all properties
+Create a Place with location, landmarks, year, notes
+Expect location, landmarks, year, notes to match inputs
+
+TEST TWO: fullDescription method
+Call fullDescription on a Place
+Expect a formatted string with location, year, landmarks, notes
+
+TEST THREE: addLandmark method
+Call addLandmark with a new landmark
+Expect landmarks length to increase by 1
+
+TEST FOUR: getRating method
+Call getRating on a Place
+Expect the rating string to match the expected value
