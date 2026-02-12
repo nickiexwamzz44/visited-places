@@ -12,7 +12,7 @@ Places I've been to
 
 
 ## Project layout
-|_index.html - Open with browser
+|_index.html - open with browser
 |_places.js - business logic + UI 
 |_style.css - optional styling
 |_README.md - test progress and results
@@ -32,15 +32,15 @@ describe("Place", function() {
   });
 
   it("can add new landmarks", function() {
-    const nyc = new Place("New York", ["Statue of Liberty"], 2023, "Business trip");
-    nyc.addLandmark("Central Park");
-    expect(nyc.landmarks).toContain("Central Park");
+    const mlolongo = new Place("Mlolongo", ["African Heritage House"], 2025, "Breathtaking views");
+    mlolongo.addLandmark("Nairobi Naational Park");
+    expect(mlolongo.landmarks).toContain("Nairobi Naational Park");
   });
 
   it("returns rating", function() {
-    const rome = new Place("Rome", ["Colosseum"], 2022, "History tour");
-    rome.setRating(5);
-    expect(rome.rating).toEqual(5);
+    const tokyo = new Place("Tokyo", ["Shibuya Crossing"], 2025, "Cherry Blossoms");
+    tokyo.setRating(5);
+    expect(tokyo.rating).toEqual(5);
   });
 
 ## Peer Code Review
@@ -70,9 +70,9 @@ Change Notes to: Cherry blossoms and sushi tour.
 Resubmit → Tokyo’s entry updates.
 
 3. Deleting a Place
-Click "New York" in the list.
+Click "Mlolongo" in the list.
 In the details panel, click Delete.
-"New York" is removed from the list and localStorage.
+"Mlolongo" is removed from the list and localStorage.
 
 4. Searching Places
 Type Eiffel in the search bar.
