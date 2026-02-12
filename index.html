@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>visited-places</title>
-
+  <meta charset="UTF-8">
+  <title>Places I've Been to</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Visited Places</h1>
-    <script src="places.js"></script>
-    <script src="test-places.js"></script>
+  <h1>Places I've Been to</h1>
+
+  <h2>Search Places</h2>
+  <input type="text" id="search" placeholder="Search by location or landmark">
+
+  <div class="place-list" id="place-list"></div>
+  <div class="details" id="details">Click a place to see details</div>
+
+  <h2>Add a New Place</h2>
+  <form id="place-form">
+    <label>Location: <input type="text" id="location" required></label>
+    <label>Landmarks (comma separated): <input type="text" id="landmarks"></label>
+    <label>Year: <input type="number" id="year" required></label>
+    <label>Notes: <textarea id="notes"></textarea></label>
+    <label>Rating (1-5): <input type="number" id="rating" min="1" max="5"></label>
+    <button type="submit">Add Place</button>
+  </form>
+
+  <script src="places.js"></script>
 </body>
 </html>
